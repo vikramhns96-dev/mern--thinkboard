@@ -1,6 +1,11 @@
 import ratelimit from "../config/upstash.js";
 
 const rateLimiter = async (req, res, next) => {
+  // Skip rate limiting in development
+  if (process.env.NODE_ENV === "development") {
+    return next();
+  }
+
   try {
     const { success } = await ratelimit.limit("my-rate-limit");
 
