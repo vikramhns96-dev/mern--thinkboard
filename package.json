@@ -9,8 +9,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "<h1 align=\"center\">📝 MERN Stack Note Taking App ✨</h1>",
   "dependencies": {
     "nodemon": "^3.1.11"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikramhns96-dev/mern--thinkboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vikramhns96-dev/mern--thinkboard/issues"
+  },
+  "homepage": "https://github.com/vikramhns96-dev/mern--thinkboard#readme"
 }
