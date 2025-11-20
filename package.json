@@ -4,13 +4,15 @@
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/src/server.js"
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm run dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "<h1 align=\"center\">📝 MERN Stack Note Taking App ✨</h1>",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.1.11"
   },
   "devDependencies": {},
